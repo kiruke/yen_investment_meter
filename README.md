@@ -1,24 +1,37 @@
-# README
+# 円投資メーター
+### サービスURL : 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ■ サービス概要 
+インフレ化における円を保持していた場合どれだけ目減りするかを視覚化します<br>
+<br>
+<br>
 
-Things you may want to cover:
+## ■ このサービスへの思い・作りたい理由 
+インフレで円だけを持つことに対する疑問から生まれました<br>
+<br>
+<br>
 
-* Ruby version
+## ■ ユーザー層について 
+- インフレを理解していない方
+- 投資に興味がある方
+  <br>
+  <br>
 
-* System dependencies
+## ■サービスの利用イメージ
 
-* Configuration
+## 機能候補
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## ■ 使用技術
+| カテゴリ | 技術 |
+| ---- | ---- |
+| フロントエンド | Rails 7.2.2 / TailwindCSS / JavaScript |
+| バックエンド | Rails 7.2.2 / Ruby 3.3.0 |
+| データベース | PostgreSQL |
+| 開発環境 | Docker |
+| インフラ | Heroku |
+| API | |
+| VCS | GitHub |
+| CI/CD | GitHub Actions |
+| テスト・リファクタ | Rspec / Rubocop |
+<br>
+<br>
