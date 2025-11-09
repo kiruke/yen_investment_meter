@@ -10,8 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 0) do
+ActiveRecord::Schema[7.2].define(version: 2025_10_18_084809) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "asset_prices", force: :cascade do |t|
+    t.date "price_date", null: false
+    t.string "asset_type", null: false
+    t.decimal "price", precision: 8, scale: 2, null: false
+    t.string "unit", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["price_date", "asset_type"], name: "index_asset_prices_on_price_date_and_asset_type", unique: true
+  end
 end
