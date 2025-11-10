@@ -1,0 +1,54 @@
+/* app/assets/stylesheets/application.css */
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+/* Tailwindと併用するカスタムスタイル（通常のCSS） */
+.btn-primary {
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: white;
+  font-weight: 500; /* font-medium */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.375rem; /* rounded-md */
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+.form-input-custom {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-input-custom:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6; /* ring-2 ring-blue-500 */
+}
+
+/* 貯金チェッカー用のカスタムスタイル */
+.savings-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.savings-form-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
